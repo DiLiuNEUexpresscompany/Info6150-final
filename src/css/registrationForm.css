@@ -1,0 +1,18 @@
+.paddingx{
+    padding-left: 20rem;
+    padding-right: 20rem;
+}
+.re_bg-blue{
+    background-color: #2F4C79 !important;
+}
+#output {
+    margin: 0 auto;
+    max-width: 800px;
+  }
+#output h2 {
+    font-family: "Univers LT Std 93 Extra Black Extended", Open Sans, Noto Sans Japanese, Arial Black;
+  }
+  
+  #output strong{
+    font-family: "Univers LT Std 93 Extra Black Extended", Open Sans, Noto Sans Japanese, Arial Black;
+  }
