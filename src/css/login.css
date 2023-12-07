@@ -8,9 +8,12 @@
     color: rgba(47, 76, 121, 0.9);
 }
 
-.hoverblue{
-    background-color: rgba(47, 76, 121);
+
+.sign_in_bg-blue{
+    background-color: #2F4C79 !important;
 }
-.hover\:hoverblue:hover{
-    background-color: rgba(47, 76, 121, 0.9);
+
+.hover\:sign_in_bg-blue:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(47, 76, 121 / var(--tw-bg-opacity))!important;
 }

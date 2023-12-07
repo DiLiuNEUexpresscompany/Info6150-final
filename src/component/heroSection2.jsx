@@ -1,11 +1,9 @@
 import React from 'react';
-
 function HeroSection2(props) {
     const title = props.title;
     return (
       <div className="bg-white py-5">
         <div className="relative mx-auto hongkongpicture">
-          {/* Decorative image and overlay */}
           <div aria-hidden="true" className="absolute inset-0 overflow-hidden">
             <img className="h-full w-full object-cover object-center" src={props.imageUrl} alt="hero section img" />
           </div>
