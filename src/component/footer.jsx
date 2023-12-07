@@ -7,11 +7,11 @@ import '../css/footer.css'
 import '../css/main.css'
 const footerNavigation = {
     main: [
-      { name: 'Homepage', href: '#' },
+      { name: 'Homepage', href: 'index' },
       { name: 'Blog', href: '#' },
-      { name: 'Registration', href: '#' },
+      { name: 'Registration', href: 'registration' },
       { name: 'About', href: '#' },
-      { name: 'Hotel and Transportation', href: '#' },
+      { name: 'Hotel and Transportation', href: 'https://booking.com/' },
       { name: 'Policy', href: '#' },
     ],
     social: [
