@@ -1,0 +1,10 @@
+.paragraph{
+    font-family: "Times New Roman", serif;
+}
+.title{
+    font-family: "Univers LT Std 93 Extra Black Extended", Open Sans, Noto Sans Japanese, Arial Black;
+}
+.capitalTitle{
+    font-family: "Univers LT Std 93 Extra Black Extended", Open Sans, Noto Sans Japanese, Arial Black;
+    text-transform: uppercase;
+}

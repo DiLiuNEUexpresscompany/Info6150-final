@@ -1,0 +1,16 @@
+.loginColor{
+    --tw-text-opacity: 1;
+    color: rgba(47, 76, 121);
+}
+
+.hover\:loginColor:hover {
+    --tw-text-opacity: 1;
+    color: rgba(47, 76, 121, 0.9);
+}
+
+.hoverblue{
+    background-color: rgba(47, 76, 121);
+}
+.hover\:hoverblue:hover{
+    background-color: rgba(47, 76, 121, 0.9);
+}

@@ -1,0 +1,29 @@
+.companyName{
+    color: rgba(32, 32, 32, 1);
+    font-size: 26px;
+    font-family: "Univers LT Std 93 Extra Black Extended", Open Sans, Noto Sans Japanese, Arial Black;
+    font-weight: 800;
+    line-height: 1.18;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: middle;
+}
+.navName{
+    font-family: "Univers LT Std 93 Extra Black Extended", Open Sans, Noto Sans Japanese, Arial Black;
+    font-weight: 800;
+    line-height: 1.18;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+
+.logoProperties{
+    width: 5rem;
+    height: 3rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.hover\:hoverblue:hover{
+    background-color: rgba(47, 76, 121, 0.9);
+}

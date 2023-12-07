@@ -1,0 +1,9 @@
+.discountBox{
+    background:#C82337;
+    color:#ffffff;
+    border-radius: 2px;
+    line-height: 16px;
+    margin-right: 6px;
+    padding: 4px 6px;
+    width: 100px;
+}
