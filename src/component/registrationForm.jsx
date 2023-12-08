@@ -21,7 +21,6 @@ function PersonalInformationForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
-    // 处理表单提交逻辑
   };
 
   return (

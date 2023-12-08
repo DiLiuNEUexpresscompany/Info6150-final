@@ -19,9 +19,9 @@ const navigation = [
   { name: 'Introduction', href: '#', current: false,
     dropdownItems: [
       { name: 'Hongkong', href: 'hongkong' },
-      { name: 'Iceland', href: '#' },
-      { name: 'Tokyo', href: '#' },
-      { name: 'Italy', href: '#' },
+      { name: 'Iceland', href: 'iceland' },
+      { name: 'Tokyo', href: 'tokyo' },
+      { name: 'Italy', href: 'italy' },
     ],
   },
   { name: 'Hotel and Transportation', href: 'https://booking.com/', current: false },
