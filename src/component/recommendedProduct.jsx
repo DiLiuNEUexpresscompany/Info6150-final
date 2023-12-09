@@ -6,7 +6,7 @@ import recommendedTokyo from '../img/tokyo2.jpg'
 import recommendedItaly from '../img/italy-rome.jpg'
 
 export function RecommendedProduct() {
-  const place = ["Iceland", "Hongkong", "Tokyo", "Italy"];
+  const place = ["iceland", "hongkong", "tokyo", "italy"];
   const imageSrc = [recommendedIceland, recommendedHongkong, recommendedTokyo, recommendedItaly];
   const discountRate = [35, 25, 15, 10];
   const endDate = ["December 31, 2023", "November 15, 2023", "December 23, 2023", "November 24, 2023"];

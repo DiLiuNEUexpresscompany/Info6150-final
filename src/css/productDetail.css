@@ -1,0 +1,10 @@
+
+.add_Button_bg-blue{
+    background-color: #2F4C79 !important;
+}
+
+.hover\:add_Button_bg-blue:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(47, 76, 121 / var(--tw-bg-opacity))!important;
+}
+

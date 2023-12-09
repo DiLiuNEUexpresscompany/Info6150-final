@@ -8,3 +8,16 @@
     font-family: "Univers LT Std 93 Extra Black Extended", Open Sans, Noto Sans Japanese, Arial Black;
     text-transform: uppercase;
 }
+
+.blue{
+    color: rgba(47, 76, 121,1);
+}
+.red{
+    color: rgb(200, 35, 55);
+}
+.orange{
+   color:rgb(224, 98, 54) ;  
+}
+.brown{
+    color:rgb(215, 171, 97); 
+ }

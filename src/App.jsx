@@ -6,6 +6,7 @@ import Login from './page/login';
 import Registration from './page/registration';
 import ScrollToTopButton from './component/returnToTop';
 import './App.css'
+import { Iceland } from './page/iceland';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/index" element={<Home />} />
           <Route path="/hongkong" element={<Hongkong />} />
+          <Route path="/iceland" element={<Iceland />} />
           <Route path="/login" element={<Login />} />
           <Route path="/registration" element={<Registration  />} />
         </Route>
