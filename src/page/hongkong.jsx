@@ -9,6 +9,7 @@ import hongkongImage from '../img/hk-movies-header-16-9.jpg';
 import hongkongImage1 from '../img/hongkong4.jpg';
 import hongkongImage2 from '../img/hongkong6.jpg'
 import hongkongImage3 from '../img/Experience-HK_attractions_The-Peak-Tram_Victoria-Peak.jpg'
+import CommentBox from "../component/commentBox";
  
 
 export function Hongkong(){
@@ -91,13 +92,12 @@ export function Hongkong(){
             <ShortSummary  summary={shortSummary} />
             <ProductDetail {...product} />
             <DividingLine />
-            
+            <CommentBox />
             <DividingLine />
             <DividingLine />
             <TravelTips location="hongkong" backgroundImage={hongkongImage2} seasonalWeather={hongkongSeasonsData} blog={hongkongBlog} />
             <DividingLine />
             <Footer />
-
         </>
     );
 }

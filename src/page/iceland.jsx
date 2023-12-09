@@ -16,7 +16,7 @@ export function Iceland(){
          
             <DividingLine />
             <DividingLine />
-            <TravelTips location="iceland" backgroundImage={IcelandImg2} />
+            <TravelTips location="iceland" backgroundImage={IcelandImg2} seasonalWeather={hongkongSeasonsData} blog={hongkongBlog} />
             <DividingLine />
 
         </>

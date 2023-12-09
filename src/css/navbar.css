@@ -27,3 +27,8 @@
 .hover\:hoverblue:hover{
     background-color: rgba(47, 76, 121, 0.9);
 }
+
+.border{
+    border-color: transparent;
+    border: 0.5px;
+}

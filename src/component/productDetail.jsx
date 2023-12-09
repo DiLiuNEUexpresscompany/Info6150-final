@@ -106,9 +106,9 @@ export default function ProductDetail(props) {
             <form>
               <div className="sm:flex sm:justify-between">
                 {/* Size selector */}
-                <RadioGroup value={selectedSize} onChange={setSelectedSize}>
-                  <RadioGroup.Label className="block text-sm font-medium text-gray-700 capitalTitle">travel days</RadioGroup.Label>
-                  <div className="mt-1 grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <RadioGroup value={selectedSize} onChange={setSelectedSize}  >
+                  <RadioGroup.Label className="block text-sm font-medium text-gray-700">Size</RadioGroup.Label>
+                  <div className="mt-1 grid grid-cols-1 gap-4 sm:grid-cols-2 your-radio-group-class ">
                     {props.sizes.map((size) => (
                       <RadioGroup.Option
                         as="div"
@@ -116,23 +116,23 @@ export default function ProductDetail(props) {
                         value={size}
                         className={({ active }) =>
                           classNames(
-                            active ? 'ring-2 check-boeder-blue' : '',
+                            active ? 'ring-2' : '',
                             ' block cursor-pointer rounded-lg border border-gray-300 p-4 focus:outline-none'
                           )
                         }
                       >
                         {({ active, checked }) => (
                           <>
-                            <RadioGroup.Label as="p" className="text-base font-medium text-gray-900 title">
+                            <RadioGroup.Label as="p" className="text-base font-medium text-gray-900">
                               {size.name}
                             </RadioGroup.Label>
-                            <RadioGroup.Description as="p" className="mt-1 text-sm text-gray-500 paragraph">
+                            <RadioGroup.Description as="p" className="mt-1 text-sm text-gray-500">
                               {size.description}
                             </RadioGroup.Description>
                             <div
                               className={classNames(
                                 active ? 'border' : 'border-2',
-                                checked ? 'check-boeder-blue' : 'border-transparent',
+                                checked ? 'border' : 'border-transparent',
                                 'pointer-events-none absolute -inset-px rounded-lg'
                               )}
                               aria-hidden="true"
