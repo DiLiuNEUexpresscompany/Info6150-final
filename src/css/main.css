@@ -11,3 +11,12 @@
 .check-boeder-blue{
     border-color: rgba(47, 76, 121,0.9);
 }
+.blue{
+    color: rgba(47, 76, 121,1);
+}
+.red{
+    color: rgb(200, 35, 55);
+}
+.orange{
+   color:rgb(224, 98, 54) ;  
+}

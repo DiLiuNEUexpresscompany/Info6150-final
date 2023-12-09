@@ -117,7 +117,7 @@ export default function ProductDetail(props) {
                         className={({ active }) =>
                           classNames(
                             active ? 'ring-2 check-boeder-blue' : '',
-                            'relative block cursor-pointer rounded-lg border border-gray-300 p-4 focus:outline-none'
+                            ' block cursor-pointer rounded-lg border border-gray-300 p-4 focus:outline-none'
                           )
                         }
                       >

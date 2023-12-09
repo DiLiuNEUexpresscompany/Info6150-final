@@ -43,8 +43,19 @@ function classNames(...classes) {
 
 export default function NavBar() {
   const [showDropdown, setShowDropdown] = useState(false);
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    // 获取导航栏元素
+    const navbar = document.getElementById('navbar');
+    // 添加或移除固定定位和过渡类
+    if (scrollY > 900) {
+      navbar.classList.add('fixed', 'top-0', 'left-0', 'right-0', 'transition-navbar');
+    } else {
+      navbar.classList.remove('fixed', 'top-0', 'left-0', 'right-0', 'transition-navbar');
+    }
+  });
   return (
-    <Disclosure as="header" className="bg-white shadow">
+    <Disclosure as="header" className="bg-white shadow" id="navbar">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-4 lg:divide-y lg:divide-gray-200 lg:px-8">
