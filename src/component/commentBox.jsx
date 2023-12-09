@@ -1,21 +1,21 @@
 import { StarIcon } from '@heroicons/react/20/solid'
 import WriteComment from './writeComment'
+import '../css/main.css'
 
 const reviews = {
-  average: 4,
-  totalCount: 1624,
+  average: 3,
+  totalCount: 1945,
   featured: [
     {
       id: 1,
       rating: 5,
       content: `
-        <p>This is the bag of my dreams. I took it on my last vacation and was able to fit an absurd amount of snacks for the many long and hungry flights.</p>
+        <p>It's magical to see how a group of guests comes together over the course of our trip. I can always tell when that's happening because suddenly the enthusiasm is palpable.</p>
       `,
       author: 'Emily Selman',
       avatarSrc:
         'https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=256&h=256&q=80',
     },
-    // More reviews...
   ],
 }
 
@@ -26,10 +26,10 @@ function classNames(...classes) {
 export default function CommentBox() {
   return (
     <div className="bg-white">
-    <h1 className="text-4xl font-bold tracking-tight text-black lg:text-6xl text-center py-5 capitalTitle">Comments</h1>
+    <h1 className="text-3xl font-bold tracking-tight text-black lg:text-6xl text-center py-5 capitalTitle">Comments</h1>
       <div className="mx-auto max-w-2xl px-4 py-5 sm:px-6 sm:py-5 lg:grid lg:max-w-7xl lg:grid-cols-12 lg:gap-x-8 lg:px-8 lg:py-10">
         <div className="lg:col-span-4">
-          <h2 className="text-2xl font-bold tracking-tight text-gray-900">Customer Reviews</h2>
+          <h2 className="text-2xl font-bold tracking-tight text-gray-900 title">Customer Reviews</h2>
 
           <div className="mt-3 flex items-center">
             <div>
@@ -47,7 +47,7 @@ export default function CommentBox() {
               </div>
               <p className="sr-only">{reviews.average} out of 5 stars</p>
             </div>
-            <p className="ml-2 text-sm text-gray-900">Based on {reviews.totalCount} reviews</p>
+            <p className="ml-2 text-sm text-gray-900 paragraph">Based on {reviews.totalCount} reviews</p>
           </div>
 
           <div className="mt-6">
@@ -55,8 +55,8 @@ export default function CommentBox() {
           </div>
 
           <div className="mt-10">
-            <h3 className="text-lg font-medium text-gray-900">Share your thoughts</h3>
-            <p className="mt-1 text-sm text-gray-600">
+            <h3 className="text-xl font-medium text-gray-900 paragraph">Share your thoughts</h3>
+            <p className="mt-1 text-base text-gray-600 paragraph">
               If you’ve used this product, share your thoughts with other customers
             </p>
             <br />
@@ -75,7 +75,7 @@ export default function CommentBox() {
                   <div className="flex items-center">
                     <img src={review.avatarSrc} alt={`${review.author}.`} className="h-12 w-12 rounded-full" />
                     <div className="ml-4">
-                      <h4 className="text-sm font-bold text-gray-900">{review.author}</h4>
+                      <h4 className="text-sm font-bold text-gray-900 title">{review.author}</h4>
                       <div className="mt-1 flex items-center">
                         {[0, 1, 2, 3, 4].map((rating) => (
                           <StarIcon
@@ -93,7 +93,7 @@ export default function CommentBox() {
                   </div>
 
                   <div
-                    className="mt-4 space-y-6 text-base italic text-gray-600"
+                    className="mt-4 space-y-6 text-lg italic text-gray-600 paragraph"
                     dangerouslySetInnerHTML={{ __html: review.content }}
                   />
                 </div>

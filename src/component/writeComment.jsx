@@ -1,18 +1,7 @@
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
+import '../css/login.css'
+import '../css/main.css'
 import { Fragment, useState } from 'react'
+
 import { FaceSmileIcon as FaceSmileIconOutline, PaperClipIcon } from '@heroicons/react/24/outline'
 import { Listbox, Transition } from '@headlessui/react'
 import {
@@ -52,7 +41,7 @@ export default function WriteComment() {
       <div className="min-w-0 flex-1">
         <form action="#">
           <div className="border-b border-gray-200 focus-within:border-indigo-600">
-            <label htmlFor="comment" className="sr-only">
+            <label htmlFor="comment" className="sr-only paragraph">
               Add your comment
             </label>
             <textarea
@@ -150,7 +139,7 @@ export default function WriteComment() {
             <div className="flex-shrink-0">
               <button
                 type="submit"
-                className="inline-flex items-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="inline-flex items-center rounded-md sign_in_bg-blue px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Post
               </button>
