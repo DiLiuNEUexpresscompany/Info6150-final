@@ -1,13 +1,14 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import '../css/returnButton.css'
 import returnButton from '../icon/up_arrow_icon.png';
 
 function ScrollToTopButton() {
+  const buttonRef = useRef(null);
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-
-      const scrollToTopButton = document.getElementById('scrollToTopButton');
+      const scrollToTopButton = buttonRef.current;
 
       if (scrollY > 200) {
         scrollToTopButton.classList.add('show');
@@ -25,7 +26,7 @@ function ScrollToTopButton() {
 
     window.addEventListener('scroll', handleScroll);
 
-    const scrollToTopButton = document.getElementById('scrollToTopButton');
+    const scrollToTopButton = buttonRef.current;
     scrollToTopButton.addEventListener('click', handleButtonClick);
 
     // Cleanup the event listeners when the component unmounts
@@ -37,7 +38,7 @@ function ScrollToTopButton() {
 
   return (
     <>
-        <button id="scrollToTopButton">
+        <button id="scrollToTopButton" ref={buttonRef}>
             <img src={returnButton} />
         </button>
     </>
