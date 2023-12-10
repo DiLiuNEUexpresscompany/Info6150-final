@@ -8,44 +8,44 @@ import '../css/main.css'
 const footerNavigation = {
     main: [
       { name: 'Homepage', href: 'index' },
-      { name: 'Blog', href: '#' },
+      { name: 'Blog', href: 'https://www.legalnomads.com/' },
       { name: 'Registration', href: 'registration' },
-      { name: 'About', href: '#' },
+      { name: 'About', href: 'company' },
       { name: 'Hotel and Transportation', href: 'https://booking.com/' },
       { name: 'Policy', href: '#' },
     ],
     social: [
       {
         name: 'Facebook',
-        href: '#',
+        href: 'https://www.facebook.com/',
         icon: (props) => (
         <img className="iconLength" src={FaceBook} alt="Buffer Company Facebook"/>
         ),
       },
       {
         name: 'Discord',
-        href: '#',
+        href: 'https://discord.com/',
         icon: (props) => (
             <img className="iconLength" src={Discord} alt="Buffer Company Discord"/>
         ),
       },
       {
         name: 'X',
-        href: '#',
+        href: 'https://twitter.com/',
         icon: (props) => (
             <img className="iconLength" src={X} alt="Buffer Company X"/>
         ),
       },
       {
         name: 'GitHub',
-        href: '#',
+        href: 'https://www.github.com/',
         icon: (props) => (
             <img className="iconLength" src={GitHub} alt="Buffer Company Github"/>
         ),
       },
       {
         name: 'YouTube',
-        href: '#',
+        href: 'https://www.youtube.com/',
         icon: (props) => (
             <img className="iconLength" src={Youtuber} alt="Buffer Company Youtuber"/>
         ),

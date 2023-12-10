@@ -26,7 +26,7 @@ const navigation = [
   },
   { name: 'Hotel and Transportation', href: 'https://booking.com/', current: false },
   { name: 'Registration', href: 'registration', current: false },
-  { name: 'Company', href: '', current: false },
+  { name: 'Company', href: 'company', current: false },
   { name: 'Login', href: 'login', current: false },
 
 ]
@@ -45,9 +45,7 @@ export default function NavBar() {
   const [showDropdown, setShowDropdown] = useState(false);
   window.addEventListener('scroll', () => {
     const scrollY = window.scrollY;
-    // 获取导航栏元素
     const navbar = document.getElementById('navbar');
-    // 添加或移除固定定位和过渡类
     if (scrollY > 900) {
       navbar.classList.add('fixed', 'top-0', 'left-0', 'right-0', 'transition-navbar');
     } else {

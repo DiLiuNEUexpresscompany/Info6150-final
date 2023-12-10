@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import PersonalInformationForm from "../component/registrationForm";
-import DestinationCard from "../component/destinationcCard";
+import Footer from "../component/footer";
 
 import NavBar from "../component/navbar";
+import DividingLine from "../component/dividingLine";
 function Registration(){
+
     return(
         <>
             <NavBar />
-            <DestinationCard />
             <PersonalInformationForm />
+            <DividingLine />
+            <Footer />
+           
         </>
     );
 }

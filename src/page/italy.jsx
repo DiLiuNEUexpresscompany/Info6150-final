@@ -5,49 +5,52 @@ import NavBar from "../component/navbar";
 import ProductDetail from "../component/productDetail";
 import { ShortSummary } from "../component/shortSummary";
 import { TravelTips } from "../component/travelTips";
-import IcelandImg from '../img/Iceland.jpg'
-import IcelandImg1 from '../img/iceland1.jpg'
-import IcelandImg2 from '../img/iceland4.jpg'
-import IcelandImg3 from '../img/Iceland2.jpg'
-import IcelandImg4 from '../img/map-scenic-iceland-northern-lights-guided-tour-15.webp'
+import italyImg from '../img/italy.jpg'
+import italyImg1 from '../img/italy2.jpeg'
+import italyImg2 from '../img/rome-italy-piazza.jpg'
+import italyImg3 from '../img/Italy_GettyImage.webp'
+import italyImg4 from '../img/map-treasures-italy-guided-tour-2023-01-8.webp'
 import Footer from "../component/footer";
 import CommentBox from "../component/commentBox";
 import { Itinerary } from "../component/Itinerary";
-export function Iceland(){
+export function Italy(){
     
     const product = {
-        name: 'natural wonders of iceland',
+        name: 'TREASURES OF ITALY',
         href: '#',
-        price: '$4,011-$6,663',
+        price: '$4,649-$5,243',
         description:
-          "Breathe in the fresh air of Iceland as you tour the scenic bay of Reykjavik, uncover volcanoes on the way to Vik and explore the geothermal hubbub of Lake Mývatn—near Akureyri. From the thunder of the two-tiered Gullfoss Waterfall and the geothermal floating pools of Egilsstaðir to the black lava fields of Búðir and the sea cliffs of Arnastapi, experience every imaginable landscape on this one week guided tour. Take an Insight Choice in Reykjavik between a dip in the mineral rich waters of the Blue Lagoon or a walking tour of the city’s premier sights—led by a Local Expert. In Hellisheidi, visit Iceland’s flagship geothermal heat and power station, and learn how this scientific wonder helped the country generate 70% of its power—from renewable energy sources.",
-        imageSrc: IcelandImg1,
-        imageAlt: 'Iceland',
+          "Experience Italy on a guided tour. Explore the Eternal City with a Local Expert, who will whisk you to the Vatican Museums for a tour of the Pope’s art collection and a behind-the-scenes look at the Bramante Staircase, a spiral architectural masterpiece. Later, see the infamous Colosseum and the Arch of Constantine. <br><br>Cruise to Capri, where you’ll take an open-top taxi to the top of the island for unparalleled views of the rugged coastline and sparkling sea — then walk the Caesar Augustus Gardens and see the Faraglioni rocks with a Local Expert. In Venice, walk through St. Mark’s Square and see its basilica of the same name; later, allow yourself to be serenaded as a gondolier glides you through the city’s canals. Sail to the candy-colored island of Burano, where you can toast to a fantastic trip at a celebration dinner featuring wine and fresh-caught specialties.",
+        imageSrc: italyImg1,
+        imageAlt: 'Italy',
         breadcrumbs: [
           { id: 1, name: 'European', href: '#' },
-          { id: 2, name: 'Iceland', href: '#' },
+          { id: 2, name: 'Italy', href: '#' },
         ],
-        disc:'35',
+        disc:'10',
         sizes: [
-          { name: '7 Days', description: '7-Day Quality Tour' },
-          { name: '9 Days', description: '9-Day Deluxe Tour' },
+          { name: '8 Days', description: '8-Day Quality Tour' },
+          { name: '10 Days', description: '10-Day Deluxe Tour' },
         ],
       }
 
-      const shortSummary=`"Iceland is a country for the adventurous. Known for its mind-bending landscapes and awe-inspiring natural phenomena, this rugged land, with all its raw, dramatic landscapes should be on your bucket list. Prepare to experience a world of gushing waterfalls, volcanoes and hot springs."`;
+      const shortSummary=`"There’s no place quite like Italy. From the busy streets of Rome and the winding canals of Venice to the cliffs of Cinque Terre, it’s all beauty and history and, of course, food. On our trips to Italy, you’ll see it all, eat it all, and love every minute."`;
       
       const itineraryData = [
-        { day: 'DAY1', route: 'The Viking City of Reykjavík' },
-        { day: 'DAY2', route: 'South Shore Adventure to Vík' },
-        { day: 'DAY3', route: 'The Golden Circle to Flúðir' },
+        { day: 'DAY1', route: 'Welcome to the Eternal City of Rome' },
+        { day: 'DAY2', route: 'Vatican City and Rome with a Local' },
+        { day: 'DAY3', route: 'Ancient Pompeii and on to Sorrento' },
         { day: 'DAY4', route: 'Thingvellir, Borgarnes and Húsafell' },
-        { day: 'DAY5', route: 'Reykjavík sightseeing' },
-        { day: 'DAY6', route: 'Choice in Reykjavik' },
-        { day: 'DAY7', route: 'Farewell Reykjavík' },
+        { day: 'DAY5', route: 'The Isle of Dreams' },
+        { day: 'DAY6', route: 'The Autostrada del Sole to Florence' },
+        { day: 'DAY7', route: 'Florence, birthplace of the Renaissance' },
+        { day: 'DAY8', route: 'Cinque Terre and Portofino to Santa Margherita' },
+        { day: 'DAY9', route: 'Lake Maggiore' },
+        { day: 'DAY10', route: 'To Venice With Wine Along the Way' },
       ];
   
 
-      const icelandSeasonsData = [
+      const italySeasonsData= [
         {
           name: "SPRING",
           svg: (
@@ -56,7 +59,7 @@ export function Iceland(){
                     </svg>
           ),
           time: "MAR - MAY",
-          temp: "AVG 7°-15° Temp."
+          temp: "AVG 21°-27° Temp."
         },
         {
             name: "SUMMER",
@@ -66,7 +69,7 @@ export function Iceland(){
               </svg>
             ),
             time: "JULY - AUG",
-            temp: "AVG 12°-19° Temp."
+            temp: "AVG 30°-34° Temp."
           },
           {
             name: "AUTUMN",
@@ -76,7 +79,7 @@ export function Iceland(){
               </svg>
             ),
             time: "SEP - NOV",
-            temp: "AVG 7°-10° Temp."
+            temp: "AVG 12°-24° Temp."
           },
           {
             name: "WINTER",
@@ -86,29 +89,29 @@ export function Iceland(){
               </svg>
             ),
             time: "DEC - FEB",
-            temp: "AVG -20°-2° Temp."
+            temp: "AVG -3°-9° Temp."
           },
       ];
 
-      const icelandBlog = {
-        imageSrc: IcelandImg3,
-        title: "Don't miss the hot springs!!!",
-        author: "Miriam Orr",
-        authorLink: "https://hekla.com/blog/top-10-natural-hot-springs-in-iceland/"
+      const italyBlog = {
+        imageSrc: italyImg3 ,
+        title: "Italian Wine Appreciation",
+        author: "Jacky Chen",
+        authorLink: "https://visitproseccoitaly.com/guide-to-italian-wine-types/"
       };
     return(
         <>
             <NavBar />
-            <HeroSection2 imageUrl={IcelandImg} title="Iceland Guided Tours and Vacation Packages"  />
+            <HeroSection2 imageUrl={italyImg} title="Italy Guided Tours and Vacation Packages"  />
             <DividingLine />
             <ShortSummary  summary={shortSummary}  />
             <ProductDetail {...product} />
             <DividingLine />
             <CommentBox />
             <DividingLine />
-            <Itinerary itineraryData={itineraryData} imageSrc={IcelandImg4} />
+            <Itinerary itineraryData={itineraryData} imageSrc={italyImg4} />
             <DividingLine />
-            <TravelTips location="iceland" backgroundImage={IcelandImg2} seasonalWeather={icelandSeasonsData} blog={icelandBlog} />
+            <TravelTips location="Rome" backgroundImage={italyImg2} seasonalWeather={italySeasonsData} blog={italyBlog} />
             <DividingLine />
             <Footer />
 

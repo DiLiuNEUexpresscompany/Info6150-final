@@ -45,7 +45,7 @@ export default function ProductDetail(props) {
           <div className="mt-4">
             <h1 className="text-3xl capitalTitle font-bold tracking-tight text-gray-900 sm:text-4xl">{props.name}</h1>
           </div>
-          <Discount discount={25}/>
+          <Discount discount={props.disc}/>
 
           <section aria-labelledby="information-heading" className="mt-4">
             <h2 id="information-heading" className="sr-only">

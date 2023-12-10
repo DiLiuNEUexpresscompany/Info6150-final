@@ -13,6 +13,7 @@ import hongkongImage3 from '../img/Experience-HK_attractions_The-Peak-Tram_Victo
 import CommentBox from "../component/commentBox";
 import { Itinerary } from "../component/Itinerary";
 import hongkongImage4 from '../img/hongkongguide.webp'
+
  
 
 export function Hongkong(){
@@ -29,6 +30,7 @@ export function Hongkong(){
           { id: 1, name: 'China', href: '#' },
           { id: 2, name: 'Hongkong', href: '#' },
         ],
+        disc:'25',
         sizes: [
           { name: '5 Days', description: '5-Day Quality Tour' },
           { name: '7 Days', description: '7-Day Deluxe Tour' },
