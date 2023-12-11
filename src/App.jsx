@@ -11,6 +11,7 @@ import { Iceland } from './page/iceland';
 import { Tokyo } from './page/tokyo';
 import { Italy } from './page/italy';
 import NotFound from './component/notFound';
+import { CompanyPage } from './page/company';
 
 
 function App() {
@@ -71,6 +72,7 @@ function App() {
             <Route path="/italy" element={<Italy/>} />
             <Route path="/login" element={<Login />} />
             <Route path="/registration" element={<Registration  />} />
+            <Route path="/company" element={<CompanyPage />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
