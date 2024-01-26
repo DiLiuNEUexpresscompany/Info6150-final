@@ -3,6 +3,7 @@ import '../css/main.css'
 import '../css/login.css'
 import loginImg from '../img/login.webp';
 export default function Login() {
+  
     return (
       <>
         <NavBar />

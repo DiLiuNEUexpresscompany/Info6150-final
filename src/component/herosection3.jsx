@@ -19,7 +19,7 @@ export function Herosection3(){
                 At Buffer Company, we believe that travel is not just about visiting new places; it's about creating lasting memories and exploring the world in a way that resonates with your soul. Whether you're an adventurous explorer, a culture enthusiast, or simply seeking relaxation, we have the perfect itinerary for you.
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
-                <a href="mailto:liu.di4@northeastern.edu" className="rounded-md about_bg_red px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 title">Get started</a>
+                <a href="mailto:liu.di4@northeastern.edu" className="rounded-md about_bg_red px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 title">Connect us</a>
                 <a href="#" className="text-sm font-semibold leading-6 text-white title">Learn more <span aria-hidden="true">→</span></a>
                 </div>
 
